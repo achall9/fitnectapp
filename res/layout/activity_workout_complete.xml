@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="achall9.com.fitnectapp.WorkoutComplete">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Title"
+        android:textSize="20sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/beginTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Username"
+        android:textSize="15sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/beginUser"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:hint="Exercise"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/beginExercise"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="25dp"
+        android:id="@+id/tutorialSearch"
+        android:text="Look up tutorial?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reps"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/beginReps"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sets"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/beginSets"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:paddingTop="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:hint="Comment Text..."
+        android:textColor="@color/black"
+        android:id="@+id/beginComment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:layout_gravity="bottom"
+            android:contentDescription="back button"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/previousEx"/>
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_next"
+            android:layout_gravity="bottom"
+            android:contentDescription="net button"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/nextEx"/>
+
+    </LinearLayout>
+
+</LinearLayout>

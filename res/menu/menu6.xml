@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"/>
+
+    <item android:id="@+id/action_filterDropDown"
+        android:title="All Workouts"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_all"
+                android:title="All Workouts"/>
+            <item android:id="@+id/action_my_gym"
+                android:title="My Gym" />
+            <item android:id="@+id/action_rating"
+                android:title="Popular" />
+        </menu>
+    </item>
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+
+
+</menu>
